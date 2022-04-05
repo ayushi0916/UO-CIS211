@@ -1,16 +1,16 @@
-# lab01-intervals
+# lab02-fractions
 
-An introductory lab exercise for CIS 211, related to the Agenda main 
-project.  This exercise introduces 
-- classes, which is how we add new types of objects to Python, 
-- objects, which are the values of the new types we create, 
-- methods, which are like functions specialized to classes, and 
-- "magic" methods (aka "special" methods), which are automatically 
-  invoked through some built-in functions like `str`, or through 
-  operations like `+`
+Fraction Class
+In this lab session, you'll code a new Python class to represent Fraction objects.
 
-This exercise is designed to be led by a graduate teaching assistant
-in a scheduled lab. 
+The main topics you'll practice during this lab are:
+
+Defining magic and non-magic methods.
+Creating methods that generate new objects.
+Creating methods that modify the caller object (a.k.a mutators).
+Read the instructions carefully and ask for clarification from your TA/LA if necessary.
+
+IMPORTANT: Remember to use type hinting in your method headers specifying the argument types and the return type.
 
 Look in doc/HOWTO.md for detailed directions.  
 
