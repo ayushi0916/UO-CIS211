@@ -27,9 +27,9 @@ class Test_01_Fraction(unittest.TestCase):
     def test_02_str(self):
         """Magic method is used whenever you print an object"""
         a = fractions.Fraction(5, 8)
-        self.assertEqual(a.__str__(), '[5/8]')
+        self.assertEqual(a.__str__(), '5/8')
         b = fractions.Fraction(1, 2)
-        self.assertEqual(b.__str__(), '[1/2]')
+        self.assertEqual(b.__str__(), '1/2')
 
     def test_03_repr(self):
         """A string that looks like a call to the constructor of the class"""
@@ -49,7 +49,7 @@ class Test_01_Fraction(unittest.TestCase):
     def test_06_simplify(self):
         """simplifying the fractions"""
         a = fractions.Fraction(35, 56)
-        self.assertTrue(__eq__(a.simplify(), fractions.Fraction(5, 8)))
+        self.assertTrue(__eq__(a, fractions.Fraction(5, 8)))
 
 
 def __eq__(a: "Fraction", b: "Fraction") -> "Fraction":
