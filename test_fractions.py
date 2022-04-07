@@ -33,8 +33,8 @@ class Test_01_Fraction(unittest.TestCase):
 
     def test_03_repr(self):
         """A string that looks like a call to the constructor of the class"""
-        i = fractions.Fraction(3, 8)
-        self.assertEqual(i.__repr__(), 'Fraction(3, 8)')
+        i = fractions.Fraction(3,8)
+        self.assertEqual(i.__repr__(),'Fraction(3,8)')
 
     def test_04_mul(self):
         """multiply both the fractions"""
@@ -59,7 +59,6 @@ def __eq__(a: "Fraction", b: "Fraction") -> "Fraction":
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
-
 
 
 
