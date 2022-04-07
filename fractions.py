@@ -9,10 +9,8 @@ def gcd(a: int, b: int) -> int:
 
 class Fraction:
     def __init__(self, num : int, den: int):
-        if num < 0:
-            raise ValueError("Numerator cannot be negative")
-        if den <= 0:
-            raise ValueError("Denominator cannot be negative")
+        assert num>0,"Denominator cannot be 0 and Numerator cannot be negative"
+        assert den>=0,"Denominator cannot be 0 and Numerator cannot be negative"
         self.num = num
         self.den = den
         self.simplify()
@@ -37,4 +35,3 @@ class Fraction:
         my_gcd = gcd(self.num, self.den)
         self.num //= my_gcd
         self.den //= my_gcd
-
